@@ -5,19 +5,29 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace ConverterDocker
+
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
- 
-        //int i;
+        // result label1
         double result;
 
         //Dictionnary Power Cisco
-        Dictionary<string, int> Cisco =
-          new Dictionary<string, int>();
+        Dictionary<string, int> Cisco = new Dictionary<string, int>();
 
         //Value Cisco Dictionnary
+        //Test 1
+            {
+                { "Tx" , 23},
+                {"Tx 2", 20}
+            }
+        //Test 2
+         
+            Cisco["Neel Beniwal"] = 9;
+
+        //Test 3
             Cisco.Add("Tx Power Level 1", 23); 
             Cisco.Add("Tx Power Level 2", 20); 
             Cisco.Add("Tx Power Level 3", 17); 
@@ -26,6 +36,10 @@ namespace ConverterDocker
             Cisco.Add("Tx Power Level 6", 8);
 
 
+        private ActionResult View(object model)
+        {
+            throw new NotImplementedException();
+        }
 
         protected void TextBox_1(object sender, EventArgs e)
         {
@@ -57,5 +71,16 @@ namespace ConverterDocker
         }
 
         
+    }
+
+    internal class ExampleViewModel
+    {
+        public ExampleViewModel()
+        {
+        }
+    }
+
+    public class ActionResult
+    {
     }
 }

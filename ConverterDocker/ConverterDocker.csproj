@@ -182,6 +182,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cisco\Add.cs" />
+    <Compile Include="ColorDictionary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
