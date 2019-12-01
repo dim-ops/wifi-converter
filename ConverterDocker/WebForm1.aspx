@@ -28,6 +28,8 @@
         <br />
         <br />
             <asp:Label ID="Label1" runat="server"></asp:Label>
+        <br />
+            <asp:Label ID="Label2" runat="server"></asp:Label>
         </div>
    </form>
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">

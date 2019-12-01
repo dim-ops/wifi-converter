@@ -12,10 +12,20 @@ namespace ConverterDocker
  
         //int i;
         double result;
-        protected void Page_Load(object sender, EventArgs e)
-        {
 
-        }
+        //Dictionnary Power Cisco
+        Dictionary<string, int> Cisco =
+          new Dictionary<string, int>();
+
+        //Value Cisco Dictionnary
+            Cisco.Add("Tx Power Level 1", 23); 
+            Cisco.Add("Tx Power Level 2", 20); 
+            Cisco.Add("Tx Power Level 3", 17); 
+            Cisco.Add("Tx Power Level 4", 14); 
+            Cisco.Add("Tx Power Level 5", 11); 
+            Cisco.Add("Tx Power Level 6", 8);
+
+
 
         protected void TextBox_1(object sender, EventArgs e)
         {
@@ -38,6 +48,9 @@ namespace ConverterDocker
             result = 10*Math.Log10(Int32.Parse(TextBox1.Text)/1)- Int32.Parse(TextBox2.Text);
             //Label1.Text = i.ToString();
             Label1.Text = "Result : " + result.ToString() + " dB";
+
+            //Cisco label
+            //Label2.Text = "Cisco value : " + "dB" ;
 
             
 
