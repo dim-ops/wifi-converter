@@ -15,26 +15,35 @@ namespace ConverterDocker
         double result;
 
         //Dictionnary Power Cisco
-        Dictionary<string, int> Cisco = new Dictionary<string, int>();
+        Dictionary<string, int> dicCisco = new Dictionary<string, int>();
 
         //Value Cisco Dictionnary
         //Test 1
-            {
+            /*{
                 { "Tx" , 23},
                 {"Tx 2", 20}
-            }
+            }*/
         //Test 2
          
-            Cisco["Neel Beniwal"] = 9;
+            //Cisco["Neel Beniwal"] = 9;
 
         //Test 3
-            Cisco.Add("Tx Power Level 1", 23); 
-            Cisco.Add("Tx Power Level 2", 20); 
-            Cisco.Add("Tx Power Level 3", 17); 
-            Cisco.Add("Tx Power Level 4", 14); 
-            Cisco.Add("Tx Power Level 5", 11); 
-            Cisco.Add("Tx Power Level 6", 8);
+            //Cisco.Add("Tx Power Level 1", 23); 
+            //Cisco.Add("Tx Power Level 2", 20); 
+            //Cisco.Add("Tx Power Level 3", 17); 
+            //Cisco.Add("Tx Power Level 4", 14); 
+            //Cisco.Add("Tx Power Level 5", 11); 
+            //Cisco.Add("Tx Power Level 6", 8);
 
+        protected void Page_init()
+        {
+            dicCisco.Add("Tx Power Level 1", 23);
+            dicCisco.Add("Tx Power Level 2", 20);
+            dicCisco.Add("Tx Power Level 3", 17);
+            dicCisco.Add("Tx Power Level 4", 14);
+            dicCisco.Add("Tx Power Level 5", 11);
+            dicCisco.Add("Tx Power Level 6", 8);
+        }
 
         private ActionResult View(object model)
         {
